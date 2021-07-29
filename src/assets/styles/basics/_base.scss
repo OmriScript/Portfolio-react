@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: none;
+    color: rgb(150, 178, 221);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-button {
+    width: 0px;
+  }
+
+html {
+    font-family: montserrat, sans-serif;
+    font-size: rem(18px);
+    color: $clr2;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    background-size: 116px;
+    background-color: $clr1;
+}
+
+img {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: caveat, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 0.6em;
+}
+
+a {
+    text-decoration: none;
+    color: $clr2
+}

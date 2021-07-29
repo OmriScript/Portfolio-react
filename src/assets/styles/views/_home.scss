@@ -1,0 +1,51 @@
+.home {
+
+&.scroll-container {
+    display: flex;
+    flex-direction: column;
+    
+    & > * {
+    min-width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        background-color: rgb(23, 184, 170);
+    }
+
+    & > *::before, *::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: red;
+    background-color: black;
+    }
+    & > *::before {
+        top: 0;
+        left: 0;
+    }
+    & > *::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    :nth-child(odd) {
+        background-color: rgb(162, 23, 226);
+        color: white;
+      }
+      
+      :nth-child(even) {
+        background-color: rgb(104, 24, 136);
+        color: white;
+      }
+}
+
+@media (min-width: $narrow-breakpoint) {
+    &.scroll-container {
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+}
+}

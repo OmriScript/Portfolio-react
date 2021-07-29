@@ -1,0 +1,41 @@
+.app-header {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(181, 112, 209);
+    .logo {
+        user-select: none;
+    }
+    .logo:hover {
+        cursor: pointer;
+    }
+
+    .nav-links li:not(:first-child) {
+        margin-inline-start: 25px;
+    }
+
+    .nav-links, .hamburger-menu {
+        // padding: 25px 0;
+        font-size: 0.8rem;
+    }
+
+    a:hover {
+        color: $clr3
+    }
+
+    .nav-links {
+       display: none;
+    }
+
+    @media (min-width: $narrow-breakpoint) {
+        .nav-links {
+       display: flex;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    }  
+}

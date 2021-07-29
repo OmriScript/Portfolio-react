@@ -46,6 +46,7 @@
     &.scroll-container {
         flex-direction: row;
         overflow-x: hidden;
+        // scroll-behavior: smooth;
     }
 }
 }
